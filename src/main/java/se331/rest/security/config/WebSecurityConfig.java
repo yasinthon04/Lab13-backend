@@ -39,7 +39,7 @@ public class WebSecurityConfig {
 
     @Autowired
     private JwtAuthenticationEntryPoint unauthorizedHandler;
-    
+
     @Autowired
     private final JwtAuthenticationTokenFilter tokenFilter;
     @Bean
@@ -60,7 +60,7 @@ public class WebSecurityConfig {
 
 
 
-    
+
     ServerHttpSecurity serverHttpSecurity() {
 
         return ServerHttpSecurity.http();

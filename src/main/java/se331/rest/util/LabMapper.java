@@ -7,10 +7,10 @@ import se331.rest.entity.Event;
 import se331.rest.entity.EventDTO;
 import se331.rest.entity.Organizer;
 import se331.rest.entity.OrganizerDTO;
-
+import org.mapstruct.Mapping;
 import java.util.List;
-
-@Mapper
+import java.util.stream.Collectors;
+@Mapper(imports = Collectors.class)
 public interface LabMapper {
     LabMapper INSTANCE = Mappers.getMapper(LabMapper.class);
 
