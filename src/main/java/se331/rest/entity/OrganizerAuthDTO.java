@@ -5,16 +5,14 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class  OrganizerDTO {
+public class OrganizerAuthDTO {
     Long id;
     String name;
-    List<OrganizerOwnEventsDTO> ownEvents = new ArrayList<>();
+    List<String> authorities;
 }
-
